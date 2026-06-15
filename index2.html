@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>QNIGIRLS</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/product.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script> 
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+   <style>
+    </style>
+    <script>
+        
+    </script>
+    </head>
+     
+
+<body>
+    <div id="wrap">
+        <div class="fix">
+            <div class="header">
+                <div class="inner">
+                    <div class="top_right">
+                        <div class="right_left">
+                            <a href="#" alt="LOGIN"><img src="img/t_login.jpg" onmouseover="this.src='img/hover_gnb/t_login_over.jpg';" onmouseout="this.src='img/t_login.jpg';"></a>
+                            <a href="#" alt="JOIN-US"><img src="img/t_join.jpg" onmouseover="this.src='img/hover_gnb/t_join_over.jpg';" onmouseout="this.src='img/t_join.jpg';"></a>
+                            <a href="#" alt="MYPAGE"><img src="img/t_mypage.jpg" onmouseover="this.src='img/hover_gnb/t_mypage_over.jpg';" onmouseout="this.src='img/t_mypage.jpg';"></a>
+                            <a href="#" alt="ORDER"><img src="img/t_order.jpg" onmouseover="this.src='img/hover_gnb/t_order_over.jpg';" onmouseout="this.src='img/t_order.jpg';"></a>
+                        </div>
+                            <div class="allmenu">
+                                <ul class="more_view">
+                                    <li><a href="#" style="cursor: default"><img src="img/t_myqni.jpg" onmouseover="this.src='img/hover_gnb/t_myqni_over.jpg';" onmouseout="this.src='img/t_myqni.jpg';"></a>
+                                        <ul class="mypage">
+                                            <li><a href="#">쇼핑내역</a></li>
+                                            <li><a href="#">장바구니</a></li>
+                                            <li><a href="#">회원가입</a></li>
+                                            <li><a href="#">관심상품</a></li>
+                                            <li><a href="#">적립금조회</a></li>
+                                            <li><a href="#">예치금조회</a></li>
+                                            <li><a href="#">내쿠폰함</a></li>
+                                            <li><a href="#">게시물관리</a></li>
+                                            <li><a href="#">개인결제창</a></li>
+                                            <li><a href="#">배송추적</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" style="cursor: default"><img src="img/t_customer.jpg" onmouseover="this.src='img/hover_gnb/t_customer_over.jpg';" onmouseout="this.src='img/t_customer.jpg';"></a>
+                                        <ul class="customer">
+                                            <li><a href="#">이용가이드</a></li>
+                                            <li><a href="#">공지사항</a></li>
+                                            <li><a href="#">Q&A 게시판</a></li>
+                                            <li><a href="#">FAQ (주문 시 필독)</a></li>
+                                            <li><a href="#">이벤트</a></li>
+                                            <li><a href="#">상품 후기</a></li>
+                                            <li><a href="#">지연/품절 상품 리스트</a></li>
+                                            <li><a href="#">미확인 입금자</a></li>
+                                            <li><a href="#">장기 지연 보상 신청</a></li>
+                                            <li><a href="#">큐니에 지원합니다!</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="t_search">
+                                <fieldset>
+                                    <legend>검색</legend>
+                                    <input id="keyword" name="keyword" fw-filter fw-label="검색어" fw-msg class="inputTypeText" placeholder onkeyup="SEARCH_HASHTNG.GETHASHTAG($(this));" autocomplete="off" onmousedown="SEARCH_BANNER.clickSearchform(this)" value type="text">
+                                    <input type="image" src="img/btn_search.png" alt="검색" onclick="SEARCH_BANNER.submitSearchBanner(this); return false">
+                                </fieldset>
+                            </div>
+                        </div>
+                    <div class="all_gnb">
+                    <div id="more_allgnb" class="more_allgnb">
+                        <a href="#" class="more_allgnb_btn">
+                            <img src="img/category.jpg"  onmouseover="this.src='img/hover_gnb/category_over.jpg';" onmouseout="this.src='img/category.jpg';">
+                        </a>
+                        <div class="more_gnb_view">
+                            <div class="more_allmenu_view" style="border-left: 0;">
+                                <ul class="first">
+                                    <li><a href="#">신상품보기</a></li>
+                                    <li class="pdb20"><a href="#">베스트셀러</a></li>
+                                    <li><a href="#">L♥VE QNI</a></li>
+                                    <li><a href="#" style="color: #fb8165">코스메틱/뷰티</a></li>
+                                    <li class="pdb20"><a href="#" style="color: #c0997e">당일배송</a></li>
+                                    <ul>
+                                        <li><a href="#"><img src="img/icon/y_icon.png" width="30px"><span>YouTube</span></a></li>
+                                        <li><a href="#"><img src="img/icon/f_icon.png" width="30px"><span>Facebook</span></a></li>
+                                        <li><a href="#"><img src="img/icon/in_icon.png" width="30px"><span>Instagram</span></a></li>
+                                        <li><a href="#"><img src="img/icon/t_icon.png" width="30px"><span>Twitter</span></a></li>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="h2"><a href="#">TOP</a></li>
+                                    <li><a href="#">민소매티</a></li>
+                                    <li><a href="#">티셔츠</a></li>
+                                    <li><a href="#">블라우스/셔츠</a></li>
+                                    <li><a href="#">니트</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="h2"><a href="#">SHOES & BAG</a></li>
+                                    <li><a href="#">슈즈</a></li>
+                                    <li><a href="#">가방</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="h2"><a href="#">OUTER</a></li>
+                                    <li><a href="#">자켓/코트</a></li>
+                                    <li><a href="#">집업/점퍼</a></li>
+                                    <li><a href="#">가디건</a></li>
+                                    <li><a href="#">베스트</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="h2"><a href="#">ACC</a></li>
+                                    <li><a href="#">모자/헤어소품</a></li>
+                                    <li><a href="#">안경/선글라스</a></li>
+                                    <li><a href="#">시계</a></li>
+                                    <li><a href="#">스카프/머플러</a></li>
+                                    <li><a href="#">쥬얼리</a></li>
+                                    <li><a href="#">핸드폰케이스</a></li>
+                                    <li><a href="#">ETC</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="h2"><a href="#">DRESS</a></li>
+                                    <li><a href="#">드레스</a></li>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </ul>
+                                <ul>
+                                    <li class="h2"><a href="#">SUMMER</a></li>
+                                    <li><a href="#">비키니</a></li>
+                                    <li><a href="#">래쉬가드</a></li>
+                                    <li><a href="#">비치드레스</a></li>
+                                    <li><a href="#">비치웨어</a></li>
+                                    <li><a href="#">ETC</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="h2"><a href="#">BOTTOM</a></li>
+                                    <li><a href="#">스커트</a></li>
+                                    <li><a href="#">팬츠</a></li>
+                                    <li><a href="#">짱짱한스키니</a></li>
+                                    <li><a href="#">일자팬츠</a></li>
+                                    <li><a href="#">8~9부팬츠</a></li>
+                                    <li><a href="#">레깅스&스타킹</a></li>
+                                    <li><a href="#">155cm</a></li>
+                                    <li><a href="#">숏팬츠</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="h2">SPECIAL</li>
+                                    <li><a href="#">만원샵</a></li>
+                                    <li><a href="#">한정세일</a></li>
+                                    <li><a href="#">맨투맨&후디</a></li>
+                                    <li><a href="#">융&기모</a></li>
+                                    <li><a href="#">데모</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">more_view();</script>
+                </div>
+                </div>
+            </div>
+                <div class="top_logo" align="center">
+                    <a href="http://u-kyeong.com/qnigirls/">
+                        <img src="img/toplogo.jpg">
+                    </a>
+                </div>
+                <div id="menu">
+                    <div id="category" style="padding-top: 80px; padding-left: 100px; " class="category">
+                        <div class="position">
+                            <ul>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_21_menu_922472.jpg" onmouseover="this.src='img/hover_gnb/shop1_21_menu_over_842991.jpg';" onmouseout="this.src='img/shop1_21_menu_922472.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_17_menu_759214.jpg" onmouseover="this.src='img/hover_gnb/shop1_17_menu_over_297750.jpg';" onmouseout="this.src='img/shop1_17_menu_759214.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_770_menu_653919.jpg" onmouseover="this.src='img/hover_gnb/shop1_770_menu_over_378448.jpg';" onmouseout="this.src='img/shop1_770_menu_653919.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_1174_menu_521221.jpg" onmouseover="this.src='img/hover_gnb/shop1_1174_menu_over_894974.jpg';" onmouseout="this.src='img/shop1_1174_menu_521221.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_517_menu_380748.jpg" onmouseover="this.src='img/hover_gnb/shop1_517_menu_over_749597.jpg';" onmouseout="this.src='img/shop1_517_menu_380748.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_3_menu_816407.jpg" onmouseover="this.src='img/hover_gnb/shop1_3_menu_over_432734.jpg';" onmouseout="this.src='img/shop1_3_menu_816407.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_7_menu_179175.jpg" onmouseover="this.src='img/hover_gnb/shop1_7_menu_over_265988.jpg';" onmouseout="this.src='img/shop1_7_menu_179175.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_5_menu_835983.jpg" onmouseover="this.src='img/hover_gnb/shop1_5_menu_over_941959.jpg';" onmouseout="this.src='img/shop1_5_menu_835983.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_122_menu_657673.jpg" onmouseover="this.src='img/hover_gnb/shop1_122_menu_over_732098.jpg';" onmouseout="this.src='img/shop1_122_menu_657673.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_121_menu_717975.jpg" onmouseover="this.src='img/hover_gnb/shop1_121_menu_over_556819.jpg';" onmouseout="this.src='img/shop1_121_menu_717975.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_10_menu_990513.jpg" onmouseover="this.src='img/hover_gnb/shop1_10_menu_over_339237.jpg';" onmouseout="this.src='img/shop1_10_menu_990513.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_542_menu_760116.jpg" onmouseover="this.src='img/hover_gnb/shop1_542_menu_over_931496.jpg';" onmouseout="this.src='img/shop1_542_menu_760116.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_790_menu_333730.jpg" onmouseover="this.src='img/hover_gnb/shop1_790_menu_over_292809.jpg';" onmouseout="this.src='img/shop1_790_menu_333730.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_806_menu_301867.jpg" onmouseover="this.src='img/hover_gnb/shop1_806_menu_over_317337.jpg';" onmouseout="this.src='img/shop1_806_menu_301867.jpg';"></a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="quick" id="quick">
+            <div class="side_btn" id="side_btn">
+                <img id="close_btn" src="img/icon/close.png">
+            </div>
+            <div class="side_wrap">
+                <div class="side_inner" id="side_inner">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>즐겨찾기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>카테고리</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>검색</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>장바구니</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>고객센터</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="bottom_ui">
+                        <div class="scroll">
+                            <span class="btn_scroll top" onclick="winScroll('top')"></span>
+                            <span class="btn_scroll bottom" onclick="winScroll('bottom')"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+        <div class="m_contents">
+            <div class="main_c">
+                <img src="img/products/sub/main.jpg">
+                <div class="infoarea_wrap">
+                <div class="infoarea">
+				    <div class="detail_fixed">
+                        <div class="headingarea">
+							<span class="icon"></span>
+							<h2>스테디 포켓셔츠블라우스</h2>
+							<span class="delivery displaynone">[해외배송 가능상품]</span>
+							<div class="color displaynone"></div>
+                        </div>
+						<table border="1" summary="" class="supply displaynone">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">스토어 정보</th>
+							 	<td>
+                                    <span></span>
+                                    <a href="#none" onclick=""><img src="" alt="공급사 바로가기"></a>
+                                    </td>
+				                </tr>
+                            </tbody>
+                        </table>
+                        <div class="product_info">
+                            <table summary="">
+                                <caption> 기본 정보</caption>
+                                <tbody>
+                                    <tr class="product_price">
+                                        <th scope="row">
+                                            <span style="font-size:13px;color:#000000;">
+                                                판매가</span>
+                                        </th>
+                                        <td>
+                                            <span style="font-size:13px;color:#000000;">
+                                                <strong id="span_product_price_text" style="text-decoration: line-through">22,500원</strong>
+                                                <input id="product_price" name="product_price" value="" type="hidden">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="product_price">
+                                        <th scope="row">
+                                            <span style="font-size:13px;color:#000000;">
+                                                할인가</span>
+                                        </th>
+                                        <td>
+                                            <span style="font-size:13px;color:#000000;">21,000원
+                                                <input id="product_price" name="product_price" value="" type="hidden">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="mileage_value">
+                                        <th scope="row">
+                                            <span style="font-size:12px;color:#555555;">적립금</span>
+                                        </th>
+                                        <td>
+                                            <span style="font-size:12px;color:#555555;">
+                                                <span id="span_mileage_text">110원 (1%)</span>
+                                                </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="displaynone">
+                            <img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/txt_naver.gif" alt="개인결제창을 통한 결제 시 네이버 마일리지 적립 및 사용이 가능합니다."></p>
+						<ul border="1" summary="" class="product_option">
+                                <li>
+                                <ul>
+                                    <li class="title" scope="row">
+                                        컬러
+                                    </li>
+									<li class="content">
+                                        <select option_product_no="18799" option_select_element="ec-option-select-finder" option_sort_no="1" option_type="T" item_listing_type="S" option_title="컬러" product_type="product_option" product_option_area="product_option_18799_0" name="option1" id="product_option_id1" class="ProductOption0" option_style="select" required="true">
+                                        <option value="*" selected="" link_image="">-[필수] 옵션을 선택해 주세요 ♡ -</option>
+                                        <option value="**" disabled="" link_image="">-------------------------------------------------------</option>
+                                        <option value="아이보리" link_image="">아이보리</option><option value="소라" link_image="">소라 -Hey착용</option>
+                                        </select>
+                                        <p class="value"></p>
+                                    </li>
+								</ul>
+                            </li>
+                        </ul>
+                        <div class="displaynone add-option" id="">
+							<a href="#none" onclick="">
+                                <img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/btn_manual_select.gif" alt="옵션 선택">
+                            </a>
+						</div>
+						<div class="guidearea">
+							<p class="info">
+                                최소주문수량 1개 이상
+                                <span class="displaynone"> / 최대주문수량 0개 이하</span>
+                            </p>
+						</div>
+						<div id="totalproducts">
+							<div class="thead_wrap"></div>
+                            <table summary="">
+                                <caption>상품 목록</caption>
+                                <colgroup>
+                                    <col style="width:320px;">
+                                    <col style="width:70px;">
+                                    <col style="width:110px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">
+                                            상품명
+                                        </th>
+								        <th scope="col">
+                                            상품수
+                                        </th>
+								        <th scope="col">
+                                            가격
+                                        </th>
+								    </tr>
+                                </thead>
+								<tbody class="displaynone">
+                                    <tr>
+                                        <td>스테디 포켓셔츠블라우스</td>
+										<td>
+											<span class="quantity">
+												<input id="quantity" name="quantity_name"  value="0" type="text">				
+                                                <a href="#none">
+                                                    <img src="#" alt="수량증가" class="QuantityUp up">
+                                                </a>
+												<a href="#none">
+                                                    <img src="" alt="수량감소" class="QuantityDown down">
+                                                </a>
+											</span>
+										</td>
+										<td class="right">
+                                            <span class="quantity_price">11000</span> <span class="mileage "><img src=""> &nbsp;<span class="mileage_price">110</span></span>
+                                        </td>
+                                    </tr></tbody>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                        <div id="totalPrice" class="totalPrice">
+							<strong>TOTAL</strong> : 
+                            <span class="total">
+                                <strong><em>0</em></strong> (0개)
+                            </span>
+						</div>
+					</div>
+                </div>
+				<div class="product_action">
+                    <div class="action_button">
+                        <div class="buy">
+                            <a href="#" class="buy_bnt">
+                                <span id="btnBuy">바로구매</span>
+                            </a>
+                        </div>
+				        <div class="basket">
+                            <a id="cartbtn" href="#" class="basket_btn">
+                                장바구니
+                            </a>
+                        </div>
+                        <div class="wishlist">
+                            <a id="wishBtn" href="#" class="wishlist_btn">관심상품</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div> 
+            <div class="pagebanner">
+                <a href="#"><img src="img/products/sub/page_top_01.jpg"></a>
+                <a href="#"><img src="img/products/sub/page_top_02.jpg"></a>
+                <a href="#"><img src="img/products/sub/page_top_03.jpg"></a>
+                <a href="#"><img src="img/products/sub/page_top_04.jpg"></a>
+                <a href="#"><img src="img/products/sub/page_top_05.jpg"></a>
+                <a href="#"><img src="img/products/sub/pagepop_02-.jpg" style="width: 1150px; height: 100%;"></a>
+                <a href="#"><img src="img/products/sub/pagepop_03-.jpg" style="width: 1150px; height: 100%;"></a>
+            </div>
+            <div class="cont">           
+                <center>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p><img src="img/products/sub/2_1_00.jpg"></p>
+                    <br>
+                    <br>
+                    <br><br><br><br><br><br><br>
+                    <p>
+                        <span style="font-family: 돋움, dotum;">
+                            <span style="font-size: 16pt;">
+                                <b>스테디 포켓셔츠블라우스</b>
+                            </span>
+                        </span>
+                    </p>
+                    <br>
+                    <br>
+                    <p>
+                        <b>[MD COMMENT]</b>
+                    </p>
+                    <br>
+                    <p>데일리한 무드의 셔츠블라우스 소개해드릴게요-</p>
+                    <br>
+                    <p>바디라인을 따라 촤르르 떨어지는 실루엣이 </p>
+                    <p>매력적인 블라우스에요!</p>
+                    <br>
+                    <p>가볍고 부드러운 소재의 폴리, 레이온, 코튼 혼방으로 </p>
+                    <p>제작되었으며 <span style="font-size: 9pt;">루즈한 핏으로 체형에 상관없이 </span></p>
+                    <p><span style="font-size: 9pt;">편하게 입기 좋은 아이템입니다</span></p>
+                    <br>
+                    <p>프론트 한쪽에는 포켓 디테일을 더해 밋밋함을 덜어주었어요-</p>
+                    <br>
+                    <p>베이직한 디자인으로 어떤 하의와도</p>
+                    <p>스타일링하기 좋은 아이템으로 추천드려요:)</p>
+                    <br>
+                    <br>
+                    <p><b>[모델Hye 착용컬러-소라]</b></p><p><b><br></b></p>
+                    <p>모델사이즈- 165cm / 55size / 26(S) / 235mm</p>
+                    <br>
+                    <br>
+                    <br>
+                    <p><img src="img/products/sub/2_1_01.jpg"></p>
+                    <p><img src="img/products/sub/2_1_02.jpg"></p>
+                    <p><img src="img/products/sub/2_1_03.jpg"></p>
+                    <p><img src="img/products/sub/2_1_04.jpg"></p>
+                    <p><img src="img/products/sub/2_1_05.jpg"></p>
+                    <p><img src="img/products/sub/2_1_06.jpg"></p>
+                    <p><img src="img/products/sub/2_1_07.jpg"></p>
+                    <p><img src="img/products/sub/2_1_08.jpg"></p>
+                    <p><img src="img/products/sub/2_1_09.jpg"></p>
+                    <p><img src="img/products/sub/2_1_10.jpg"></p>
+                    <p><img src="img/products/sub/2_1_11.jpg"></p>
+                    <p><img src="img/products/sub/2_1_12.jpg"></p>
+                    <p><img src="img/products/sub/2_2_01.jpg"></p>
+                    <p><img src="img/products/sub/2_2_02.jpg"></p>
+                    <p><img src="img/products/sub/2_2_03.jpg"></p>
+                    <p><img src="img/products/sub/2_2_04.jpg"></p>
+                    <p><img src="img/products/sub/2_2_05.jpg"></p>
+                    <p><img src="img/products/sub/2_2_06.jpg"></p>
+                    <p><img src="img/products/sub/2_2_07.jpg"></p>
+                    <p><img src="img/products/sub/2_2_08.jpg"></p>
+                    <p><img src="img/products/sub/2_2_09.jpg"></p>
+                    <p><img src="img/products/sub/2_2_10.jpg"></p>
+                    <p><img src="img/products/sub/2_2_11.jpg"></p>
+                    <p><img src="img/products/sub/2_2_12.jpg"></p>
+                    <p><b>[공지사항]</b></p>
+                    <p>모델컷은 실제 컬러와 약간의 차이가 있을 수 있습니다.</p>
+                    <p>구매전 하단에 상품 디테일 페이지를 꼭 참고하시기 바랍니다.</p>
+                    <br>
+                    <p>진한 컬러의 경우 물빠짐(혹은 이염)이 있을 수 있으니</p>
+                    <p>착용하시기전 주의 부탁드리며,</p>
+                    <p>제품 착용전 1-3회 정도 단독세탁 또는</p>
+                    <p>드라이클리닝을 권장해 드려요:)</p>
+                    <p><img src="img/products/sub/BL_s_01.jpg"></p>
+                    <p><img src="img/products/sub/BL_s_02.jpg"></p>
+                    <p><img src="img/products/sub/BL_s_03.jpg"></p>
+                    <p><img src="img/products/sub/BL_s_04.jpg"></p>
+                    <p><img src="img/products/sub/BL_s_05.jpg"></p>
+                    <p><img src="img/products/sub/BL_s_06.jpg"></p>
+                    <p><img src="img/products/sub/BL_s_07.jpg"></p>
+                    <p><img src="img/products/sub/BL_s_08.jpg"></p>
+                    <p><img src="img/products/sub/BL_s_09.jpg"></p>
+                    <p><img src="img/products/sub/BL_s_10.jpg"></p>
+                </center>
+                <style>.crema-product-fit > iframe { max-width: 100% !important; }</style>
+                <div class="crema-product-fit crema-applied" data-product-code="57739">
+                    <iframe id="crema-product-fit-1" src="https://fit3.cre.ma/qng.co.kr/fit/products/57739?iframe=1&amp;iframe_id=crema-product-fit-1&amp;use_user_feedback=true&amp;app=0&amp;parent_url=https%3A%2F%2Fwww.qng.co.kr%2Fproduct%2Fdetail.html%3Fproduct_no%3D57739%26cate_no%3D3%26display_group%3D1" height="0" width="100%" scrolling="no" allowtransparency="true" frameborder="0" name="crema-product-fit-1-1585318983000" style="visibility: visible; height: 1174px;"></iframe>
+                </div>
+                <div class="crema-fit-product-size-detail crema-applied" data-product-code="57739" id="crema-fit-product-size-detail-57739">
+                    <iframe id="crema-fit-product-size-detail-1" src="https://fit3.cre.ma/qng.co.kr/fit/products/57739/size_detail?iframe=1&amp;iframe_id=crema-fit-product-size-detail-1&amp;app=0&amp;parent_url=https%3A%2F%2Fwww.qng.co.kr%2Fproduct%2Fdetail.html%3Fproduct_no%3D57739%26cate_no%3D3%26display_group%3D1" height="0" width="100%" scrolling="no" allowtransparency="true" frameborder="0" name="crema-fit-product-size-detail-1-1585318983008" style="visibility: visible; height: 552px;">
+                    </iframe>
+                </div>
+            </div>
+            <center>
+                <p><img src="img/products/sub/modelsize-.jpg" alt="모델사이즈"></p>
+            </center>
+            <div id="prddelivery">      
+                <div class="cont">
+                    <h3>
+                    </h3>
+                    <p><img src="img/products/sub/guide_01.jpg"></p>
+                    <a href="/board/free/read.html?no=1391853&amp;board_no=1" target="_blank">
+                        <p><img src="img/products/sub/guide_02.jpg"></p>
+                    </a>
+                    <p><img src="img/products/sub/guide_03%20(1).jpg"></p>  
+                </div>
+            </div>
+            <div id="prdrelated" class="prdrelated">
+                <div class="relation">
+                    <h3>RELATED ITEM</h3>
+                    <div class="relationlist">
+                        <ul class="prdList">
+                            <li class="prdList_item">
+                                <div class="box">
+                                    <a href="#">
+                                        <img src="img/products/sub/dcc8a75622b534a32bab5362ee4cf22e.webp" alt="" class="thumb">
+                                    </a>
+                                    <p><a href="#">크림버터 코튼일자팬츠</a></p>
+                                    <strong>24,500원</strong>
+                                </div>
+                            </li>
+                            <li class="prdList_item">
+                                <div class="box">
+                                    <a href="#">
+                                        <img src="img/products/sub/38227e77d06090427421f2b60fef2c38.jpg" alt="" class="thumb">
+                                    </a>
+                                    <p><a href="#">에브리데이 레더숄더백</a></p>
+                                    <strong>24,500원</strong>
+                                </div>
+                            </li>
+                            <li class="prdList_item">
+                                <div class="box">
+                                    <a href="#">
+                                        <img src="img/products/sub/ebc8b313c4247f8034244b3915851407.webp" alt="" class="thumb">
+                                    </a>
+                                    <p><a href="#">스퀘어 레더벨트</a></p>
+                                    <strong>8,900원</strong>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="crema-product-reviews crema-applied" data-product-code="57739" style="width: 1127px; margin: 0 auto;">
+                <iframe id="crema-product-reviews-1" src="https://review3.cre.ma/qng.co.kr/products/reviews?product_code=57739&amp;iframe_id=crema-product-reviews-1&amp;app=0&amp;parent_url=https%3A%2F%2Fwww.qng.co.kr%2Fproduct%2Fdetail.html%3Fproduct_no%3D57739%26cate_no%3D17%26display_group%3D1&amp;iframe=1" width="100%" scrolling="no" allowtransparency="true" frameborder="0" name="crema-product-reviews-1-1585412272979" style="visibility: visible; height: 275px;">
+                    <div class="reviews_list">
+                        <div class="reviews_form">
+                            <div class="form_head">
+                                <div class="form_title">
+                                    <strong style="font-weight: bold; color: #333;">REVIEW</strong>
+                                    <span class="divider">|</span>
+                                    <span class="weak">
+                                        문의글 혹은 악의적인 비방글은 무통보 삭제된다는 점 유의해주세요^^
+                                    </span>
+                                </div>
+                                <div class="form_button">후기게시판</div>
+                            </div>
+                        </div>
+                        <div class="reviews_summary">
+                            <div class="summary_inner">
+                                <div class="summary_lcontent">
+                                    <div class="score_summary">
+                                        <div class="score_body">
+                                            <div class="score_avg_score">
+                                                <div class="score_average">--</div>
+                                                <div class="score_reviews_count">
+                                                    0개 리뷰 평점
+                                                </div>
+                                            </div>
+                                            <ul class="score_summary_filters">
+                                                <li class="score_summary_filter" data-score="5">
+                                                    <a class="js-link-score">
+                                                        <div class="filter_title">
+                                                            5 Stars
+                                                        </div>
+                                                        <div class="filter_status">
+                                                            <div class="filter_count">(0)</div>
+                                                            <div class="filter_check sprites-check"></div>
+                                                        </div>
+                                                        <div class="filter_gauge">
+                                                            <div style="width: 0%" class="percentile"></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="score_summary_filter" data-score="5">
+                                                    <a class="js-link-score">
+                                                        <div class="filter_title">
+                                                            4 Stars
+                                                        </div>
+                                                        <div class="filter_status">
+                                                            <div class="filter_count">(0)</div>
+                                                            <div class="filter_check sprites-check"></div>
+                                                        </div>
+                                                        <div class="filter_gauge">
+                                                            <div style="width: 0%" class="percentile"></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="score_summary_filter" data-score="5">
+                                                    <a class="js-link-score">
+                                                        <div class="filter_title">
+                                                            3 Stars
+                                                        </div>
+                                                        <div class="filter_status">
+                                                            <div class="filter_count">(0)</div>
+                                                            <div class="filter_check sprites-check"></div>
+                                                        </div>
+                                                        <div class="filter_gauge">
+                                                            <div style="width: 0%" class="percentile"></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="score_summary_filter" data-score="5">
+                                                    <a class="js-link-score">
+                                                        <div class="filter_title">
+                                                            2 Stars
+                                                        </div>
+                                                        <div class="filter_status">
+                                                            <div class="filter_count">(0)</div>
+                                                            <div class="filter_check sprites-check"></div>
+                                                        </div>
+                                                        <div class="filter_gauge">
+                                                            <div style="width: 0%" class="percentile"></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="score_summary_filter" data-score="5">
+                                                    <a class="js-link-score">
+                                                        <div class="filter_title">
+                                                            1 Stars
+                                                        </div>
+                                                        <div class="filter_status">
+                                                            <div class="filter_count">(0)</div>
+                                                            <div class="filter_check sprites-check"></div>
+                                                        </div>
+                                                        <div class="filter_gauge">
+                                                            <div style="width: 0%" class="percentile"></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="score_footer">
+                                            <span class="percentage">0%</span>
+                                            의 구매자들이 이 상품을 좋아합니다.
+                                            <span class="summary_likes_count">( 0명 중 0명 )</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="summary_rcontent">
+                                    <div class="thumbnail_small_with_score">
+                                        <div class="thumbnail_small_with_score__no_result">
+                                            검색결과가 없습니다.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </iframe>
+            </div>
+            <div id="prdQnA">
+                <div class="board">
+                    <h3>Q&amp;A</h3>
+                    <p class="desc">상품에 대해 궁금한 점을 해결해 드립니다.</p>
+                    <div class="product_qna">
+                        <a name="use_qna"></a>
+                        <table border="1" summary="" class="board">
+                            <caption>상품 Q&amp;A</caption>
+                            <colgroup>
+                                <col style="width:70px;">
+                                <col style="width:134px;">
+                                <col style="width:auto">
+                                <col style="width:80px;">
+                                <col style="width:80px;">
+                                <col style="width:55px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">카테고리</th>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">작성자</th>
+                                    <th scope="col">작성일</th>
+                                    <th scope="col">조회</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="xans-record-">
+                                    <td>
+                                        <img src="img/icon/c6490557f0f857e4305edb006d2af5ab.png" alt="공지">
+                                    </td>
+                                    <td></td>
+                                    <td class="subject"> 
+                                        <a href="#"><b></b></a>
+                                        <h3><a href="#"><b>
+                                            <font color="red">★(필독!)주문 후 배송 소요 기간! (주문완료 후 임의 부분배송/지연/품절)★</font>
+                                            </b></a> 
+                                        </h3>
+                                    </td>
+                                    <td><img src="img/icon/37232752852e748409bc6f.gif"> </td>
+                                    <td class="txtLess">2016-07-14</td>
+                                    <td class="txtLess">23769</td>
+                                </tr>
+                                <tr class="xans-record-">
+                                    <td>
+                                        <img src="img/icon/c6490557f0f857e4305edb006d2af5ab.png" alt="공지">
+                                    </td>
+                                    <td></td>
+                                    <td class="subject"> 
+                                        <a href="#"><b>
+                                            <font color="red">배송전 취소,변경,묶음 원하시는 경우 꼭 확인해주세요~!!</font>
+                                            </b></a><font color="red"> </font>
+                                    </td>
+                                    <td><img src="img/icon/37232752852e748409bc6f.gif"> </td>
+                                    <td class="txtLess">2012-04-12</td>
+                                    <td class="txtLess">64563</td>
+                                </tr>
+                                <tr class="xans-record-">
+                                    <td>
+                                        <img src="img/icon/c6490557f0f857e4305edb006d2af5ab.png" alt="공지">
+                                    </td>
+                                    <td></td>
+                                    <td class="subject"> 
+                                        <a href="#"></a>
+                                        <h3><a href="#"><b>
+                                            <font color="red">교환/반불 방법과 배송비, 환불처리 방법</font></b></a><font color="red"> </font>
+                                        </h3>
+                                    </td>
+                                    <td><img src="img/icon/37232752852e748409bc6f.gif"> </td>
+                                    <td class="txtLess">2012-10-26</td>
+                                    <td class="txtLess">72203</td>
+                                </tr>
+                                <tr class="xans-record-">
+                                    <td>
+                                        <img src="img/icon/c6490557f0f857e4305edb006d2af5ab.png" alt="공지">
+                                    </td>
+                                    <td></td>
+                                    <td class="subject"> 
+                                        <a href="#"></a>
+                                        <h3><a href="#"><b>
+                                            <font color="red">	고객님 주문 결제 확인→거래처 입고요청→상품 입고→출고되는 배송 시스템입니다 ^^</font></b></a><font color="red"> </font>
+                                        </h3>
+                                    </td>
+                                    <td><img src="img/icon/37232752852e748409bc6f.gif"> </td>
+                                    <td class="txtLess">2012-10-26</td>
+                                    <td class="txtLess">72203</td>
+                                </tr>
+                                <tr class="xans-record-">
+                                    <td>
+                                        <img src="img/icon/c6490557f0f857e4305edb006d2af5ab.png" alt="공지">
+                                    </td>
+                                    <td></td>
+                                    <td class="subject"> 
+                                        <a href="#"></a>
+                                        <h3><a href="#"><b>
+                                            <font color="#000">문의게시판 답변은 순차적으로 달리지 않을 수 있습니다</font></b></a><font color="red"> </font>
+                                        </h3>
+                                    </td>
+                                    <td><img src="img/icon/37232752852e748409bc6f.gif"> </td>
+                                    <td class="txtLess">2012-10-26</td>
+                                    <td class="txtLess">72203</td>
+                                </tr>
+                                <tr class="xans-record-">
+                                    <td>
+                                        <img src="img/icon/c6490557f0f857e4305edb006d2af5ab.png" alt="공지">
+                                    </td>
+                                    <td></td>
+                                    <td class="subject"> 
+                                        <a href="#"></a>
+                                        <h3><a href="#"><b>
+                                            <font color="red">	게시판 문의 글은 답변으로만 안내됩니다</font></b></a><font color="red"> </font>
+                                        </h3>
+                                    </td>
+                                    <td><img src="img/icon/37232752852e748409bc6f.gif"> </td>
+                                    <td class="txtLess">2012-10-26</td>
+                                    <td class="txtLess">72203</td>
+                                </tr>
+                                <tr class="xans-record-">
+                                    <td>
+                                        <img src="img/icon/c6490557f0f857e4305edb006d2af5ab.png" alt="공지">
+                                    </td>
+                                    <td></td>
+                                    <td class="subject"> 
+                                        <a href="#"></a>
+                                        <h3><a href="#"><b>
+                                            <font color="#000">불량,오배송받으셨거나 배송 누락 되었을때</font></b></a><font color="red"> </font>
+                                        </h3>
+                                    </td>
+                                    <td><img src="img/icon/37232752852e748409bc6f.gif"> </td>
+                                    <td class="txtLess">2012-10-26</td>
+                                    <td class="txtLess">72203</td>
+                                </tr>
+                                <tr class="xans-record-">
+                                    <td>
+                                        <img src="img/icon/c6490557f0f857e4305edb006d2af5ab.png" alt="공지">
+                                    </td>
+                                    <td></td>
+                                    <td class="subject"> 
+                                        <a href="#"></a>
+                                        <h3><a href="#"><b>
+                                            <font color="#000">	입금했는데 입금확인 처리가 되지 않았을 경우 !!</font></b></a><font color="red"> </font>
+                                        </h3>
+                                    </td>
+                                    <td><img src="img/icon/37232752852e748409bc6f.gif"> </td>
+                                    <td class="txtLess">2012-10-26</td>
+                                    <td class="txtLess">72203</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="btnArea">
+                        <a href="#"><img src="img/icon/btn_board_write2.gif" alt="상품문의하기"></a>
+                        <a href="#"><img src="img/icon/btn_board_more.gif" alt="모두 보기"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="inner">
+                <div class="f_content">
+                    <div class="instagram">
+                        <h2>
+                            <span>INSTAGRAM</span>
+                        </h2>
+                        <p> ID : momma_0525</p>
+                    </div>
+                    <div class="info">
+                        <h2>
+                            <span>CUSTOMER CENTER</span>
+                        </h2>
+                        <ul>
+                            <li class="phone">
+                                <span>T. 1599-0000</span>
+                            </li>
+                            <li>
+                                <span>
+                                    <font color="cff2400">
+                                    <b>평일 AM 11:00 ~ PM 05:00</b>
+                                    <br>
+                                    </font>
+                                    "점심시간 PM 10:00~ PM 01:00"
+                                    <br>
+                                    "토요일,일요일,공휴일은 쉽니다."
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bankinfo">
+                        <h2>
+                            <span>BANK ACCOUNT</span>
+                        </h2>
+                        <ul>
+                            <li>우리은행 : 00000111000111 </li>
+                            <li>국민은행 : 10010001110000 </li>
+                            <li>농협 : 100020000010000 </li>
+                            <li>제일은행 : 111110000001</li>
+                            <li>신한은행 : 111100001110 </li>
+                            <li>우체국 : 111100111100010 </li>
+                            <li>하나은행 : 1111000011110000</li>
+                            <li>기업은행 : 1111100000001111 </li>                
+                            <li style="padding-top:10px;color:#000;">예 금 주 : (주)큐니걸스 </li>
+                        </ul>
+                    </div>
+                    <div class="shopinfo">
+                        <h2>
+                            <span>SHOP INFO</span>
+                        </h2>  
+                        <ul class="utilMenu">
+                            <li class="home"><a href="#">회사소개 </a></li>
+                            <li><a href="#">이용약관 </a></li>
+                            <li><a href="#"  style="font-weight: 700;"><strong>개인정보처리방침</strong></a></li>
+                            <li><a href="#"> 이용안내  </a></li>
+                            <li><a href="#">배송조회 </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="f_add">
+                    <p>
+                        <span>trade : (주)큐니걸스 </span> 
+                        <span>ceo : 손유경</span>
+                        <span>tel : 1599-0000</span> 
+                        <span>permit number : 0000</span> 
+                        <span>E-mail: jmuk9702@gmail</span>
+                    </p>
+                    <span>
+                     본 디자인에 사용된 이미지는 (주)큐니걸스 사이트에서 포트폴리용으로 임의 사용한 것입니다. 주소 및 번호는 다 임의로 정한 것임을 밝힙니다.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/swiper.min.js"></script>
+
+  <script>
+      var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        loopAdditionalSlides: 100,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+      
+        function winScroll(stat) {
+	var way = 0;
+	if(stat != 'top') {
+		way = Math.floor( jQuery(document).height() - jQuery(window).height() );
+	}
+	jQuery('html, body').animate({scrollTop : way}); return false
+}
+      
+      $(function(){
+		
+		var a=0;
+		$("#side_btn").click(function(){
+			a++;
+			a=a%2;
+			if(a==1){
+				$("#quick").css("right","-102px")
+			}else{
+				$("#quick").css("right","0px")
+			}
+		})
+	})
+      
+      $('#close_btn').on({
+          'click' : function(){
+              var src = ($(this).attr('src') === 'img/icon/close.png')
+                ? 'img/icon/menu.png'
+                : 'img/icon/close.png';
+              $(this).attr('src', src);
+          }
+      });
+  </script>
+</body>
+
+</html>    
