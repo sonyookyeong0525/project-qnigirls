@@ -1,0 +1,60 @@
+.contents{
+    width: 1150px;
+    margin: 151px auto;
+}
+.contents .product_b{
+    margin: 0;
+    padding: 50px 0;
+}
+.contents .product_b .product_title .banner img{
+    margin: 0;
+}
+.contents .product_b .product_title h2.line{
+    display: inline-block;
+    width: 1150px;
+    border-top: 1px solid #333;
+    margin: 70px 0 0;
+    padding: 0;
+}
+.contents .product_b .product_title h2.line span{
+    display: block;
+    width: 307px;
+    height: 39px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    border-top: 0;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.contents .list_title{
+    margin: 70px 0 10px 0;
+    overflow: hidden;
+    text-align: right;
+    line-height: 38px;
+}
+.contents .list_title .total{
+    float: left;
+    padding-left: 8px;
+    color: #000;
+}
+.contents .list_title ul{
+    display: inline;
+    margin-right: 4px;
+}
+.contents .list_title ul li{
+    display: inline;
+    padding: 0 6px 0 10px;
+    background: url(../img//bg_result_type.gif) no-repeat 0 50%;
+}
+.contents .list_title ul li:first-child{
+    background: none;
+}
+.contents .list_title ul li a{
+    color: #2e2e2e;
+}
+.contents .list_title ul li a:hover{
+    color: hotpink;
+}
