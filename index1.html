@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>QNIGIRLS</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/sub.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script> 
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+   <style>
+    </style>
+    <script>
+        
+    </script>
+    </head>
+     
+
+<body>
+    <div id="wrap">
+        <div class="fix">
+            <div class="header">
+                <div class="inner">
+                    <div class="top_right">
+                        <div class="right_left">
+                            <a href="#" alt="LOGIN"><img src="img/t_login.jpg" onmouseover="this.src='img/hover_gnb/t_login_over.jpg';" onmouseout="this.src='img/t_login.jpg';"></a>
+                            <a href="#" alt="JOIN-US"><img src="img/t_join.jpg" onmouseover="this.src='img/hover_gnb/t_join_over.jpg';" onmouseout="this.src='img/t_join.jpg';"></a>
+                            <a href="#" alt="MYPAGE"><img src="img/t_mypage.jpg" onmouseover="this.src='img/hover_gnb/t_mypage_over.jpg';" onmouseout="this.src='img/t_mypage.jpg';"></a>
+                            <a href="#" alt="ORDER"><img src="img/t_order.jpg" onmouseover="this.src='img/hover_gnb/t_order_over.jpg';" onmouseout="this.src='img/t_order.jpg';"></a>
+                        </div>
+                            <div class="allmenu">
+                                <ul class="more_view">
+                                    <li><a href="#" style="cursor: default"><img src="img/t_myqni.jpg" onmouseover="this.src='img/hover_gnb/t_myqni_over.jpg';" onmouseout="this.src='img/t_myqni.jpg';"></a>
+                                        <ul class="mypage">
+                                            <li><a href="#">쇼핑내역</a></li>
+                                            <li><a href="#">장바구니</a></li>
+                                            <li><a href="#">회원가입</a></li>
+                                            <li><a href="#">관심상품</a></li>
+                                            <li><a href="#">적립금조회</a></li>
+                                            <li><a href="#">예치금조회</a></li>
+                                            <li><a href="#">내쿠폰함</a></li>
+                                            <li><a href="#">게시물관리</a></li>
+                                            <li><a href="#">개인결제창</a></li>
+                                            <li><a href="#">배송추적</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" style="cursor: default"><img src="img/t_customer.jpg" onmouseover="this.src='img/hover_gnb/t_customer_over.jpg';" onmouseout="this.src='img/t_customer.jpg';"></a>
+                                        <ul class="customer">
+                                            <li><a href="#">이용가이드</a></li>
+                                            <li><a href="#">공지사항</a></li>
+                                            <li><a href="#">Q&A 게시판</a></li>
+                                            <li><a href="#">FAQ (주문 시 필독)</a></li>
+                                            <li><a href="#">이벤트</a></li>
+                                            <li><a href="#">상품 후기</a></li>
+                                            <li><a href="#">지연/품절 상품 리스트</a></li>
+                                            <li><a href="#">미확인 입금자</a></li>
+                                            <li><a href="#">장기 지연 보상 신청</a></li>
+                                            <li><a href="#">큐니에 지원합니다!</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="t_search">
+                                <fieldset>
+                                    <legend>검색</legend>
+                                    <input id="keyword" name="keyword" fw-filter fw-label="검색어" fw-msg class="inputTypeText" placeholder onkeyup="SEARCH_HASHTNG.GETHASHTAG($(this));" autocomplete="off" onmousedown="SEARCH_BANNER.clickSearchform(this)" value type="text">
+                                    <input type="image" src="img/btn_search.png" alt="검색" onclick="SEARCH_BANNER.submitSearchBanner(this); return false">
+                                </fieldset>
+                            </div>
+                        </div>
+                    <div class="all_gnb">
+                    <div id="more_allgnb" class="more_allgnb">
+                        <a href="#" class="more_allgnb_btn">
+                            <img src="img/category.jpg"  onmouseover="this.src='img/hover_gnb/category_over.jpg';" onmouseout="this.src='img/category.jpg';">
+                        </a>
+                        <div class="more_gnb_view">
+                            <div class="more_allmenu_view" style="border-left: 0;">
+                                <ul class="first">
+                                    <li><a href="#">신상품보기</a></li>
+                                    <li class="pdb20"><a href="#">베스트셀러</a></li>
+                                    <li><a href="#">L♥VE QNI</a></li>
+                                    <li><a href="#" style="color: #fb8165">코스메틱/뷰티</a></li>
+                                    <li class="pdb20"><a href="#" style="color: #c0997e">당일배송</a></li>
+                                    <ul>
+                                        <li><a href="#"><img src="img/icon/y_icon.png" width="30px"><span>YouTube</span></a></li>
+                                        <li><a href="#"><img src="img/icon/f_icon.png" width="30px"><span>Facebook</span></a></li>
+                                        <li><a href="#"><img src="img/icon/in_icon.png" width="30px"><span>Instagram</span></a></li>
+                                        <li><a href="#"><img src="img/icon/t_icon.png" width="30px"><span>Twitter</span></a></li>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="h2"><a href="#">TOP</a></li>
+                                    <li><a href="#">민소매티</a></li>
+                                    <li><a href="#">티셔츠</a></li>
+                                    <li><a href="#">블라우스/셔츠</a></li>
+                                    <li><a href="#">니트</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="h2"><a href="#">SHOES & BAG</a></li>
+                                    <li><a href="#">슈즈</a></li>
+                                    <li><a href="#">가방</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="h2"><a href="#">OUTER</a></li>
+                                    <li><a href="#">자켓/코트</a></li>
+                                    <li><a href="#">집업/점퍼</a></li>
+                                    <li><a href="#">가디건</a></li>
+                                    <li><a href="#">베스트</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="h2"><a href="#">ACC</a></li>
+                                    <li><a href="#">모자/헤어소품</a></li>
+                                    <li><a href="#">안경/선글라스</a></li>
+                                    <li><a href="#">시계</a></li>
+                                    <li><a href="#">스카프/머플러</a></li>
+                                    <li><a href="#">쥬얼리</a></li>
+                                    <li><a href="#">핸드폰케이스</a></li>
+                                    <li><a href="#">ETC</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="h2"><a href="#">DRESS</a></li>
+                                    <li><a href="#">드레스</a></li>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </ul>
+                                <ul>
+                                    <li class="h2"><a href="#">SUMMER</a></li>
+                                    <li><a href="#">비키니</a></li>
+                                    <li><a href="#">래쉬가드</a></li>
+                                    <li><a href="#">비치드레스</a></li>
+                                    <li><a href="#">비치웨어</a></li>
+                                    <li><a href="#">ETC</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="h2"><a href="#">BOTTOM</a></li>
+                                    <li><a href="#">스커트</a></li>
+                                    <li><a href="#">팬츠</a></li>
+                                    <li><a href="#">짱짱한스키니</a></li>
+                                    <li><a href="#">일자팬츠</a></li>
+                                    <li><a href="#">8~9부팬츠</a></li>
+                                    <li><a href="#">레깅스&스타킹</a></li>
+                                    <li><a href="#">155cm</a></li>
+                                    <li><a href="#">숏팬츠</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="h2">SPECIAL</li>
+                                    <li><a href="#">만원샵</a></li>
+                                    <li><a href="#">한정세일</a></li>
+                                    <li><a href="#">맨투맨&후디</a></li>
+                                    <li><a href="#">융&기모</a></li>
+                                    <li><a href="#">데모</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">more_view();</script>
+                </div>
+                </div>
+            </div>
+                <div class="top_logo" align="center">
+                    <a href="http://u-kyeong.com/qnigirls/">
+                        <img src="img/toplogo.jpg">
+                    </a>
+                </div>
+                <div id="menu">
+                    <div id="category" style="padding-top: 80px; padding-left: 100px; " class="category">
+                        <div class="position">
+                            <ul>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_21_menu_922472.jpg" onmouseover="this.src='img/hover_gnb/shop1_21_menu_over_842991.jpg';" onmouseout="this.src='img/shop1_21_menu_922472.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_17_menu_759214.jpg" onmouseover="this.src='img/hover_gnb/shop1_17_menu_over_297750.jpg';" onmouseout="this.src='img/shop1_17_menu_759214.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_770_menu_653919.jpg" onmouseover="this.src='img/hover_gnb/shop1_770_menu_over_378448.jpg';" onmouseout="this.src='img/shop1_770_menu_653919.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_1174_menu_521221.jpg" onmouseover="this.src='img/hover_gnb/shop1_1174_menu_over_894974.jpg';" onmouseout="this.src='img/shop1_1174_menu_521221.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_517_menu_380748.jpg" onmouseover="this.src='img/hover_gnb/shop1_517_menu_over_749597.jpg';" onmouseout="this.src='img/shop1_517_menu_380748.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_3_menu_816407.jpg" onmouseover="this.src='img/hover_gnb/shop1_3_menu_over_432734.jpg';" onmouseout="this.src='img/shop1_3_menu_816407.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_7_menu_179175.jpg" onmouseover="this.src='img/hover_gnb/shop1_7_menu_over_265988.jpg';" onmouseout="this.src='img/shop1_7_menu_179175.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_5_menu_835983.jpg" onmouseover="this.src='img/hover_gnb/shop1_5_menu_over_941959.jpg';" onmouseout="this.src='img/shop1_5_menu_835983.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_122_menu_657673.jpg" onmouseover="this.src='img/hover_gnb/shop1_122_menu_over_732098.jpg';" onmouseout="this.src='img/shop1_122_menu_657673.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_121_menu_717975.jpg" onmouseover="this.src='img/hover_gnb/shop1_121_menu_over_556819.jpg';" onmouseout="this.src='img/shop1_121_menu_717975.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_10_menu_990513.jpg" onmouseover="this.src='img/hover_gnb/shop1_10_menu_over_339237.jpg';" onmouseout="this.src='img/shop1_10_menu_990513.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_542_menu_760116.jpg" onmouseover="this.src='img/hover_gnb/shop1_542_menu_over_931496.jpg';" onmouseout="this.src='img/shop1_542_menu_760116.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_790_menu_333730.jpg" onmouseover="this.src='img/hover_gnb/shop1_790_menu_over_292809.jpg';" onmouseout="this.src='img/shop1_790_menu_333730.jpg';"></a>
+                                </li>
+                                <li class="record">
+                                    <a href="http://u-kyeong.com/qnigirls/sub/"><img src="img/shop1_806_menu_301867.jpg" onmouseover="this.src='img/hover_gnb/shop1_806_menu_over_317337.jpg';" onmouseout="this.src='img/shop1_806_menu_301867.jpg';"></a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="quick" id="quick">
+            <div class="side_btn" id="side_btn">
+                <img id="close_btn" src="img/icon/close.png">
+            </div>
+            <div class="side_wrap">
+                <div class="side_inner" id="side_inner">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>즐겨찾기</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>카테고리</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>검색</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>장바구니</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>고객센터</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="bottom_ui">
+                        <div class="scroll">
+                            <span class="btn_scroll top" onclick="winScroll('top')"></span>
+                            <span class="btn_scroll bottom" onclick="winScroll('bottom')"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+        <div class="m_contents">
+            <div class="contents">
+                <div class="product_b">
+                    <div class="product_title">
+                        <p class="banner">
+                            <img src="img/shop1_21_top_164205.jpg">
+                        </p>
+                        <h2 class="line">
+                            <span>New7%</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="list_title">
+                    <p class="total">
+                        등록 제품 : 
+                        <strong>25</strong>
+                        개
+                    </p>
+                    <ul>
+                        <li><a href="#">신상품</a></li>
+                        <li><a href="#">낮은가격</a></li>
+                        <li><a href="#">높은가격</a></li>
+                        <li><a href="#">인기상품</a></li>
+                    </ul>
+                </div>
+                <div class="new_products">
+                    <ul class="prdlist column4">
+                      <li class="item">
+                          <div class="box">
+                              <p class="prdimg">
+                                  <a href="http://u-kyeong.com/qnigirls/product/">
+                                      <img src="img/products/new1.webp" alt="" class="thumb">
+                                  </a>
+                                  <span class="wishicon">
+                                      <img src="img/icon/btn_wish_before.png" alt="관심상품 등록 전" productno="57739" categoryno="1" icon_status="off" login_status="T" individual-set="F">
+                                  </span>
+                                  <span class="basketicon">
+                                      <img src="img/icon/icon_201704271133221800.png" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(57739,  1, 'basket', '')" alt="장바구니 담기"> 
+                                  </span>
+                              </p>
+                              <div class="color">
+                                  <div class="colorchip">
+                                      <span style="background-color:#FEFFEF;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                      <span style="background-color:#91B0ED;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                  </div>
+                              </div>
+                              <p class="name">
+                                  <a href="#">
+                                      <strong class="title displaynone">
+                                          <span style="font-size:12px;">상품명</span> :
+                                      </strong>
+                                      <span style="font-size:12px;">스테디 포켓셔츠블라우스</span>
+                                  </a>
+                              </p>
+                              <div class="description">
+                                  <ul class="listitem spec">
+                                      <li class="size xans-record-" style="padding: 0px 0px 5px;">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">상품요약정보</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">
+                                              <font>FREE(44-66)</font>
+                                          </span>
+                                      </li>
+                                      <li class="cost xans-record-">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">판매가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;text-decoration:line-through;">22,500원</span>
+                                          <span id="span_product_tax_type_text" style="text-decoration:line-through;"> </span>
+                                      </li>
+                                      <li class="discount xans-record-">
+                                          <strong class="title ">
+                                              <span style="font-size:12px;">할인가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">21,000원</span>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="status">
+                                  <div class="icon">
+                                      <img src="img/icon/custom_195.gif" >
+                                  </div>
+                              </div>
+                          </div>
+                        </li>
+                        <li class="item">
+                          <div class="box">
+                              <p class="prdimg">
+                                  <a href="http://u-kyeong.com/qnigirls/product/">
+                                      <img src="img/products/new2.webp" alt="" class="thumb">
+                                  </a>
+                                  <span class="wishicon">
+                                      <img src="img/icon/btn_wish_before.png" alt="관심상품 등록 전" productno="57739" categoryno="1" icon_status="off" login_status="T" individual-set="F">
+                                  </span>
+                                  <span class="basketicon">
+                                      <img src="img/icon/icon_201704271133221800.png" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(57739,  1, 'basket', '')" alt="장바구니 담기"> 
+                                  </span>
+                              </p>
+                              <div class="color">
+                                  <div class="colorchip">
+                                      <span style="background-color:#61CDE7;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                  </div>
+                              </div>
+                              <p class="name">
+                                  <a href="#">
+                                      <strong class="title displaynone">
+                                          <span style="font-size:12px;">상품명</span> :
+                                      </strong>
+                                      <span style="font-size:12px;">155jean핀턱배기데님팬츠vol.204</span>
+                                  </a>
+                              </p>
+                              <div class="description">
+                                  <ul class="listitem spec">
+                                      <li class="size xans-record-" style="padding: 0px 0px 5px;">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">상품요약정보</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">
+                                              <font>XS,S,M,L,XL</font>
+                                          </span>
+                                      </li>
+                                      <li class="cost xans-record-">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">판매가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;text-decoration:line-through;">32,500원</span>
+                                          <span id="span_product_tax_type_text" style="text-decoration:line-through;"> </span>
+                                      </li>
+                                      <li class="discount xans-record-">
+                                          <strong class="title ">
+                                              <span style="font-size:12px;">할인가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">30,300원</span>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="status">
+                                  <div class="icon">
+                                      <img src="img/icon/custom_195.gif" >
+                                      <img src="img/icon/custom_189.gif" >
+                                  </div>
+                              </div>
+                          </div>
+                        </li>
+                        <li class="item">
+                          <div class="box">
+                              <p class="prdimg">
+                                  <a href="http://u-kyeong.com/qnigirls/product/">
+                                      <img src="img/products/new3.jpg" alt="" class="thumb">
+                                  </a>
+                                  <span class="wishicon">
+                                      <img src="img/icon/btn_wish_before.png" alt="관심상품 등록 전" productno="57739" categoryno="1" icon_status="off" login_status="T" individual-set="F">
+                                  </span>
+                                  <span class="basketicon">
+                                      <img src="img/icon/icon_201704271133221800.png" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(57739,  1, 'basket', '')" alt="장바구니 담기"> 
+                                  </span>
+                              </p>
+                              <div class="color">
+                                  <div class="colorchip">
+                                      <span style="background-color:#e0e0e0;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                      <span style="background-color:#fca9f0;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                      <span style="background-color:#a2dbd0;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                  </div>
+                              </div>
+                              <p class="name">
+                                  <a href="#">
+                                      <strong class="title displaynone">
+                                          <span style="font-size:12px;">상품명</span> :
+                                      </strong>
+                                      <span style="font-size:12px;">프롬베리 밴딩후드집업</span>
+                                  </a>
+                              </p>
+                              <div class="description">
+                                  <ul class="listitem spec">
+                                      <li class="size xans-record-" style="padding: 0px 0px 5px;">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">상품요약정보</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">
+                                              <font>FREE(44-66)</font>
+                                          </span>
+                                      </li>
+                                      <li class="cost xans-record-">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">판매가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;text-decoration:line-through;">29,900원</span>
+                                          <span id="span_product_tax_type_text" style="text-decoration:line-through;"> </span>
+                                      </li>
+                                      <li class="discount xans-record-">
+                                          <strong class="title ">
+                                              <span style="font-size:12px;">할인가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">27,900원</span>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="status">
+                                  <div class="icon">
+                                      <img src="img/icon/custom_195.gif" >
+                                  </div>
+                              </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                          <div class="box">
+                              <p class="prdimg">
+                                  <a href="http://u-kyeong.com/qnigirls/product/">
+                                      <img src="img/products/new4.jpg" alt="" class="thumb">
+                                  </a>
+                                  <span class="wishicon">
+                                      <img src="img/icon/btn_wish_before.png" alt="관심상품 등록 전" productno="57739" categoryno="1" icon_status="off" login_status="T" individual-set="F">
+                                  </span>
+                                  <span class="basketicon">
+                                      <img src="img/icon/icon_201704271133221800.png" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(57739,  1, 'basket', '')" alt="장바구니 담기"> 
+                                  </span>
+                              </p>
+                              <div class="color">
+                                  <div class="colorchip">
+                                      <span style="background-color:#000082;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                  </div>
+                              </div>
+                              <p class="name">
+                                  <a href="#">
+                                      <strong class="title displaynone">
+                                          <span style="font-size:12px;">상품명</span> :
+                                      </strong>
+                                      <span style="font-size:12px;">세인트 스프라이프4부슬랙스</span>
+                                  </a>
+                              </p>
+                              <div class="description">
+                                  <ul class="listitem spec">
+                                      <li class="size xans-record-" style="padding: 0px 0px 5px;">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">상품요약정보</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">
+                                              <font>FREE(44-66)</font>
+                                          </span>
+                                      </li>
+                                      <li class="cost xans-record-">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">판매가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;text-decoration:line-through;">44,500원</span>
+                                          <span id="span_product_tax_type_text" style="text-decoration:line-through;"> </span>
+                                      </li>
+                                      <li class="discount xans-record-">
+                                          <strong class="title ">
+                                              <span style="font-size:12px;">할인가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">41,400원</span>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="status">
+                                  <div class="icon">
+                                      <img src="img/icon/custom_195.gif" >
+                                      <img src="img/icon/custom_193.gif" >
+                                      <img src="img/icon/custom_025.jpg" >
+                                  </div>
+                              </div>
+                          </div>
+                        </li>
+                        <li class="item">
+                          <div class="box">
+                              <p class="prdimg">
+                                  <a href="http://u-kyeong.com/qnigirls/product/">
+                                      <img src="img/products/new5.webp" alt="" class="thumb">
+                                  </a>
+                                  <span class="wishicon">
+                                      <img src="img/icon/btn_wish_before.png" alt="관심상품 등록 전" productno="57739" categoryno="1" icon_status="off" login_status="T" individual-set="F">
+                                  </span>
+                                  <span class="basketicon">
+                                      <img src="img/icon/icon_201704271133221800.png" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(57739,  1, 'basket', '')" alt="장바구니 담기"> 
+                                  </span>
+                              </p>
+                              <div class="color">
+                                  <div class="colorchip">
+                                      <span style="background-color:#FEFFEF;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                      <span style="background-color:#000000;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                  </div>
+                              </div>
+                              <p class="name">
+                                  <a href="#">
+                                      <strong class="title displaynone">
+                                          <span style="font-size:12px;">상품명</span> :
+                                      </strong>
+                                      <span style="font-size:12px;">지젤 양브이넥5부티셔츠</span>
+                                  </a>
+                              </p>
+                              <div class="description">
+                                  <ul class="listitem spec">
+                                      <li class="size xans-record-" style="padding: 0px 0px 5px;">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">상품요약정보</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">
+                                              <font>FREE(44-66)</font>
+                                          </span>
+                                      </li>
+                                      <li class="o_cost xans-record-">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">판매가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">9,900원</span>
+                                          <span id="span_product_tax_type_text" style="text-decoration:line-through;"> </span>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="status">
+                                  <div class="icon">
+                                      <img src="img/icon/custom_188.gif" >
+                                  </div>
+                              </div>
+                          </div>
+                        </li>
+                        <li class="item">
+                          <div class="box">
+                              <p class="prdimg">
+                                  <a href="http://u-kyeong.com/qnigirls/product/">
+                                      <img src="img/products/new6.jpg" alt="" class="thumb">
+                                  </a>
+                                  <span class="wishicon">
+                                      <img src="img/icon/btn_wish_before.png" alt="관심상품 등록 전" productno="57739" categoryno="1" icon_status="off" login_status="T" individual-set="F">
+                                  </span>
+                                  <span class="basketicon">
+                                      <img src="img/icon/icon_201704271133221800.png" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(57739,  1, 'basket', '')" alt="장바구니 담기"> 
+                                  </span>
+                              </p>
+                              <div class="color">
+                                  <div class="colorchip">
+                                      <span style="background-color:#e6c9a6;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                      <span style="background-color:#c97d7d;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                      <span style="background-color:#a0a316;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                      <span style="background-color:#000000;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                  </div>
+                              </div>
+                              <p class="name">
+                                  <a href="#">
+                                      <strong class="title displaynone">
+                                          <span style="font-size:12px;">상품명</span> :
+                                      </strong>
+                                      <span style="font-size:12px;">슈가그롭 골지브이넥니트</span>
+                                  </a>
+                              </p>
+                              <div class="description">
+                                  <ul class="listitem spec">
+                                      <li class="size xans-record-" style="padding: 0px 0px 5px;">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">상품요약정보</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">
+                                              <font>FREE(44-66)</font>
+                                          </span>
+                                      </li>
+                                      <li class="o_cost xans-record-">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">판매가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">14,000원</span>
+                                          <span id="span_product_tax_type_text" style="text-decoration:line-through;"> </span>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="status">
+                                  <div class="icon">
+                                      <img src="img/icon/custom_188.gif" >
+                                  </div>
+                              </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                          <div class="box">
+                              <p class="prdimg">
+                                  <a href="http://u-kyeong.com/qnigirls/product/">
+                                      <img src="img/products/new7.webp" alt="" class="thumb">
+                                  </a>
+                                  <span class="wishicon">
+                                      <img src="img/icon/btn_wish_before.png" alt="관심상품 등록 전" productno="57739" categoryno="1" icon_status="off" login_status="T" individual-set="F">
+                                  </span>
+                                  <span class="basketicon">
+                                      <img src="img/icon/icon_201704271133221800.png" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(57739,  1, 'basket', '')" alt="장바구니 담기"> 
+                                  </span>
+                              </p>
+                              <div class="color">
+                                  <div class="colorchip">
+                                      <span style="background-color:#FEFFEF;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                      <span style="background-color:#f2d07b;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                  </div>
+                              </div>
+                              <p class="name">
+                                  <a href="#">
+                                      <strong class="title displaynone">
+                                          <span style="font-size:12px;">상품명</span> :
+                                      </strong>
+                                      <span style="font-size:12px;">크림버터 코튼 일자팬츠</span>
+                                  </a>
+                              </p>
+                              <div class="description">
+                                  <ul class="listitem spec">
+                                      <li class="size xans-record-" style="padding: 0px 0px 5px;">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">상품요약정보</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">
+                                              <font>S,M,L</font>
+                                          </span>
+                                      </li>
+                                      <li class="cost xans-record-">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">판매가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;text-decoration:line-through;">24,500원</span>
+                                          <span id="span_product_tax_type_text" style="text-decoration:line-through;"> </span>
+                                      </li>
+                                      <li class="discount xans-record-">
+                                          <strong class="title ">
+                                              <span style="font-size:12px;">할인가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">22,800원</span>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="status">
+                                  <div class="icon">
+                                      <img src="img/icon/custom_195.gif" >
+                                      <img src="img/icon/custom_193.gif" >
+                                  </div>
+                              </div>
+                          </div>
+                        </li>
+                        <li class="item">
+                          <div class="box">
+                              <p class="prdimg">
+                                  <a href="http://u-kyeong.com/qnigirls/product/">
+                                      <img src="img/products/new8.jpg" alt="" class="thumb">
+                                  </a>
+                                  <span class="wishicon">
+                                      <img src="img/icon/btn_wish_before.png" alt="관심상품 등록 전" productno="57739" categoryno="1" icon_status="off" login_status="T" individual-set="F">
+                                  </span>
+                                  <span class="basketicon">
+                                      <img src="img/icon/icon_201704271133221800.png" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(57739,  1, 'basket', '')" alt="장바구니 담기"> 
+                                  </span>
+                              </p>
+                              <div class="color">
+                                  <div class="colorchip">
+                                      <span style="background-color:#61CDE7;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                  </div>
+                              </div>
+                              <p class="name">
+                                  <a href="#">
+                                      <strong class="title displaynone">
+                                          <span style="font-size:12px;">상품명</span> :
+                                      </strong>
+                                      <span style="font-size:12px;">언발포버튼 데님 미니스커트</span>
+                                  </a>
+                              </p>
+                              <div class="description">
+                                  <ul class="listitem spec">
+                                      <li class="size xans-record-" style="padding: 0px 0px 5px;">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">상품요약정보</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">
+                                              <font>S,M,L</font>
+                                          </span>
+                                      </li>
+                                      <li class="cost xans-record-">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">판매가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;text-decoration:line-through;">29,900원</span>
+                                          <span id="span_product_tax_type_text" style="text-decoration:line-through;"> </span>
+                                      </li>
+                                      <li class="discount xans-record-">
+                                          <strong class="title ">
+                                              <span style="font-size:12px;">할인가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">27,900원</span>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="status">
+                                  <div class="icon">
+                                      <img src="img/icon/custom_195.gif" >
+                                  </div>
+                              </div>
+                          </div>
+                        </li>
+                        <li class="item">
+                          <div class="box">
+                              <p class="prdimg">
+                                  <a href="http://u-kyeong.com/qnigirls/product/">
+                                      <img src="img/products/new9.webp" alt="" class="thumb">
+                                  </a>
+                                  <span class="wishicon">
+                                      <img src="img/icon/btn_wish_before.png" alt="관심상품 등록 전" productno="57739" categoryno="1" icon_status="off" login_status="T" individual-set="F">
+                                  </span>
+                                  <span class="basketicon">
+                                      <img src="img/icon/icon_201704271133221800.png" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(57739,  1, 'basket', '')" alt="장바구니 담기"> 
+                                  </span>
+                              </p>
+                              <div class="color">
+                                  <div class="colorchip">
+                                      <span style="background-color:#000082;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                  </div>
+                              </div>
+                              <p class="name">
+                                  <a href="#">
+                                      <strong class="title displaynone">
+                                          <span style="font-size:12px;">상품명</span> :
+                                      </strong>
+                                      <span style="font-size:12px;">세인트 스프라이트 오버핏 자켓</span>
+                                  </a>
+                              </p>
+                              <div class="description">
+                                  <ul class="listitem spec">
+                                      <li class="size xans-record-" style="padding: 0px 0px 5px;">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">상품요약정보</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">
+                                              <font>FREE(44-77)</font>
+                                          </span>
+                                      </li>
+                                      <li class="cost xans-record-">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">판매가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;text-decoration:line-through;">84,000원</span>
+                                          <span id="span_product_tax_type_text" style="text-decoration:line-through;"> </span>
+                                      </li>
+                                      <li class="discount xans-record-">
+                                          <strong class="title ">
+                                              <span style="font-size:12px;">할인가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">78,200원</span>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="status">
+                                  <div class="icon">
+                                      <img src="img/icon/custom_195.gif" >
+                                      <img src="img/icon/custom_193.gif" >
+                                      <img src="img/icon/custom_025.jpg" >
+                                  </div>
+                              </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                          <div class="box">
+                              <p class="prdimg">
+                                  <a href="http://u-kyeong.com/qnigirls/product/">
+                                      <img src="img/products/new10.jpg" alt="" class="thumb">
+                                  </a>
+                                  <span class="wishicon">
+                                      <img src="img/icon/btn_wish_before.png" alt="관심상품 등록 전" productno="57739" categoryno="1" icon_status="off" login_status="T" individual-set="F">
+                                  </span>
+                                  <span class="basketicon">
+                                      <img src="img/icon/icon_201704271133221800.png" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(57739,  1, 'basket', '')" alt="장바구니 담기"> 
+                                  </span>
+                              </p>
+                              <div class="color">
+                                  <div class="colorchip">
+                                      <span style="background-color:#757575;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                  </div>
+                              </div>
+                              <p class="name">
+                                  <a href="#">
+                                      <strong class="title displaynone">
+                                          <span style="font-size:12px;">상품명</span> :
+                                      </strong>
+                                      <span style="font-size:12px;">모던 클래식 숏자켓</span>
+                                  </a>
+                              </p>
+                              <div class="description">
+                                  <ul class="listitem spec">
+                                      <li class="size xans-record-" style="padding: 0px 0px 5px;">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">상품요약정보</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">
+                                              <font>FREE(44-66)</font>
+                                          </span>
+                                      </li>
+                                      <li class="cost xans-record-">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">판매가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;text-decoration:line-through;">75,500원</span>
+                                          <span id="span_product_tax_type_text" style="text-decoration:line-through;"> </span>
+                                      </li>
+                                      <li class="discount xans-record-">
+                                          <strong class="title ">
+                                              <span style="font-size:12px;">할인가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">70,300원</span>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="status">
+                                  <div class="icon">
+                                      <img src="img/icon/custom_195.gif" >
+                                      <img src="img/icon/custom_193.gif" >
+                                  </div>
+                              </div>
+                          </div>
+                        </li>
+                        <li class="item">
+                          <div class="box">
+                              <p class="prdimg">
+                                  <a href="http://u-kyeong.com/qnigirls/product/">
+                                      <img src="img/products/new11.webp" alt="" class="thumb">
+                                  </a>
+                                  <span class="wishicon">
+                                      <img src="img/icon/btn_wish_before.png" alt="관심상품 등록 전" productno="57739" categoryno="1" icon_status="off" login_status="T" individual-set="F">
+                                  </span>
+                                  <span class="basketicon">
+                                      <img src="img/icon/icon_201704271133221800.png" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(57739,  1, 'basket', '')" alt="장바구니 담기"> 
+                                  </span>
+                              </p>
+                              <div class="color">
+                                  <div class="colorchip">
+                                      <span style="background-color:#a9a9a9;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                      <span style="background-color:#000000;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                  </div>
+                              </div>
+                              <p class="name">
+                                  <a href="#">
+                                      <strong class="title displaynone">
+                                          <span style="font-size:12px;">상품명</span> :
+                                      </strong>
+                                      <span style="font-size:12px;">155cm 밴딩조거팬츠</span>
+                                  </a>
+                              </p>
+                              <div class="description">
+                                  <ul class="listitem spec">
+                                      <li class="size xans-record-" style="padding: 0px 0px 5px;">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">상품요약정보</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">
+                                              <font>FREE(44-66)</font>
+                                          </span>
+                                      </li>
+                                      <li class="cost xans-record-">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">판매가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;text-decoration:line-through;">19,500원</span>
+                                          <span id="span_product_tax_type_text" style="text-decoration:line-through;"> </span>
+                                      </li>
+                                      <li class="discount xans-record-">
+                                          <strong class="title ">
+                                              <span style="font-size:12px;">할인가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">18,200원</span>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="status">
+                                  <div class="icon">
+                                      <img src="img/icon/custom_195.gif" >
+                                      <img src="img/icon/custom_189.gif" >
+                                  </div>
+                              </div>
+                          </div>
+                        </li>
+                        <li class="item">
+                          <div class="box">
+                              <p class="prdimg">
+                                  <a href="http://u-kyeong.com/qnigirls/product/">
+                                      <img src="img/products/new12.webp" alt="" class="thumb">
+                                  </a>
+                                  <span class="wishicon">
+                                      <img src="img/icon/btn_wish_before.png" alt="관심상품 등록 전" productno="57739" categoryno="1" icon_status="off" login_status="T" individual-set="F">
+                                  </span>
+                                  <span class="basketicon">
+                                      <img src="img/icon/icon_201704271133221800.png" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(57739,  1, 'basket', '')" alt="장바구니 담기"> 
+                                  </span>
+                              </p>
+                              <div class="color">
+                                  <div class="colorchip">
+                                      <span style="background-color:#d7b170;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                      <span style="background-color:#7eaae0;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                      <span style="background-color:#000000;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                  </div>
+                              </div>
+                              <p class="name">
+                                  <a href="#">
+                                      <strong class="title displaynone">
+                                          <span style="font-size:12px;">상품명</span> :
+                                      </strong>
+                                      <span style="font-size:12px;">테런 #항공점퍼</span>
+                                  </a>
+                              </p>
+                              <div class="description">
+                                  <ul class="listitem spec">
+                                      <li class="size xans-record-" style="padding: 0px 0px 5px;">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">상품요약정보</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">
+                                              <font>FREE(44-66)</font>
+                                          </span>
+                                      </li>
+                                      <li class="cost xans-record-">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">판매가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;text-decoration:line-through;">54,000원</span>
+                                          <span id="span_product_tax_type_text" style="text-decoration:line-through;"> </span>
+                                      </li>
+                                      <li class="discount xans-record-">
+                                          <strong class="title ">
+                                              <span style="font-size:12px;">할인가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">50,300원</span>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="status">
+                                  <div class="icon">
+                                      <img src="img/icon/custom_195.gif" >
+                                  </div>
+                              </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                          <div class="box">
+                              <p class="prdimg">
+                                  <a href="http://u-kyeong.com/qnigirls/product/">
+                                      <img src="img/products/new13.webp" alt="" class="thumb">
+                                  </a>
+                                  <span class="wishicon">
+                                      <img src="img/icon/btn_wish_before.png" alt="관심상품 등록 전" productno="57739" categoryno="1" icon_status="off" login_status="T" individual-set="F">
+                                  </span>
+                                  <span class="basketicon">
+                                      <img src="img/icon/icon_201704271133221800.png" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(57739,  1, 'basket', '')" alt="장바구니 담기"> 
+                                  </span>
+                              </p>
+                              <div class="color">
+                                  <div class="colorchip">
+                                      <span style="background-color:#FEFFEF;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                  </div>
+                              </div>
+                              <p class="name">
+                                  <a href="#">
+                                      <strong class="title displaynone">
+                                          <span style="font-size:12px;">상품명</span> :
+                                      </strong>
+                                      <span style="font-size:12px;">먼로 플라워 미니원피스</span>
+                                  </a>
+                              </p>
+                              <div class="description">
+                                  <ul class="listitem spec">
+                                      <li class="size xans-record-" style="padding: 0px 0px 5px;">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">상품요약정보</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">
+                                              <font>FREE(44-66)</font>
+                                          </span>
+                                      </li>
+                                      <li class="cost xans-record-">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">판매가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;text-decoration:line-through;">46,500원</span>
+                                          <span id="span_product_tax_type_text" style="text-decoration:line-through;"> </span>
+                                      </li>
+                                      <li class="discount xans-record-">
+                                          <strong class="title ">
+                                              <span style="font-size:12px;">할인가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">43,300원</span>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="status">
+                                  <div class="icon">
+                                      <img src="img/icon/custom_195.gif" >
+                                      <img src="img/icon/custom_193.gif" >
+                                  </div>
+                              </div>
+                          </div>
+                        </li>
+                        <li class="item">
+                          <div class="box">
+                              <p class="prdimg">
+                                  <a href="http://u-kyeong.com/qnigirls/product/">
+                                      <img src="img/products/new14.jpg" alt="" class="thumb">
+                                  </a>
+                                  <span class="wishicon">
+                                      <img src="img/icon/btn_wish_before.png" alt="관심상품 등록 전" productno="57739" categoryno="1" icon_status="off" login_status="T" individual-set="F">
+                                  </span>
+                                  <span class="basketicon">
+                                      <img src="img/icon/icon_201704271133221800.png" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(57739,  1, 'basket', '')" alt="장바구니 담기"> 
+                                  </span>
+                              </p>
+                              <div class="color">
+                                  <div class="colorchip">
+                                      <span style="background-color:#ffffff;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                      <span style="background-color:#f7c33e;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                      <span style="background-color:#000000;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                  </div>
+                              </div>
+                              <p class="name">
+                                  <a href="#">
+                                      <strong class="title displaynone">
+                                          <span style="font-size:12px;">상품명</span> :
+                                      </strong>
+                                      <span style="font-size:12px;">삐삐 미니 반팔 티셔츠</span>
+                                  </a>
+                              </p>
+                              <div class="description">
+                                  <ul class="listitem spec">
+                                      <li class="size xans-record-" style="padding: 0px 0px 5px;">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;;">상품요약정보</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">
+                                              <font>FREE(44-55)</font>
+                                          </span>
+                                      </li>
+                                      <li class="o_cost xans-record-">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">판매가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">9,900원</span>
+                                          <span id="span_product_tax_type_text" style="text-decoration:line-through;"> </span>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="status">
+                                  <div class="icon">
+                                      <img src="img/icon/custom_188.gif" >
+                                  </div>
+                              </div>
+                          </div>
+                        </li>
+                        <li class="item">
+                          <div class="box">
+                              <p class="prdimg">
+                                  <a href="http://u-kyeong.com/qnigirls/product/">
+                                      <img src="img/products/new15.jpg" alt="" class="thumb">
+                                  </a>
+                                  <span class="wishicon">
+                                      <img src="img/icon/btn_wish_before.png" alt="관심상품 등록 전" productno="57739" categoryno="1" icon_status="off" login_status="T" individual-set="F">
+                                  </span>
+                                  <span class="basketicon">
+                                      <img src="img/icon/icon_201704271133221800.png" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(57739,  1, 'basket', '')" alt="장바구니 담기"> 
+                                  </span>
+                              </p>
+                              <div class="color">
+                                  <div class="colorchip">
+                                      <span style="background-color:#ffffff;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                      <span style="background-color:#987feb;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                  </div>
+                              </div>
+                              <p class="name">
+                                  <a href="#">
+                                      <strong class="title displaynone">
+                                          <span style="font-size:12px;">상품명</span> :
+                                      </strong>
+                                      <span style="font-size:12px;">플랫 박시 레터링 반팔 티셔츠</span>
+                                  </a>
+                              </p>
+                              <div class="description">
+                                  <ul class="listitem spec">
+                                      <li class="size xans-record-" style="padding: 0px 0px 5px;">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">상품요약정보</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">
+                                              <font>FREE(44-66)</font>
+                                          </span>
+                                      </li>
+                                      <li class="o_cost xans-record-">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">판매가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">14,000원</span>
+                                          <span id="span_product_tax_type_text" style="text-decoration:line-through;"> </span>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="status">
+                                  <div class="icon">
+                                      <img src="img/icon/custom_188.gif" >
+                                  </div>
+                              </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                          <div class="box">
+                              <p class="prdimg">
+                                  <a href="http://u-kyeong.com/qnigirls/product/">
+                                      <img src="img/products/new16.webp" alt="" class="thumb">
+                                  </a>
+                                  <span class="wishicon">
+                                      <img src="img/icon/btn_wish_before.png" alt="관심상품 등록 전" productno="57739" categoryno="1" icon_status="off" login_status="T" individual-set="F">
+                                  </span>
+                                  <span class="basketicon">
+                                      <img src="img/icon/icon_201704271133221800.png" onclick="CAPP_SHOP_NEW_PRODUCT_OPTIONSELECT.selectOptionCommon(57739,  1, 'basket', '')" alt="장바구니 담기"> 
+                                  </span>
+                              </p>
+                              <div class="color">
+                                  <div class="colorchip">
+                                      <span style="background-color:#e2cca5;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                      <span style="background-color:#fec0cb;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                      <span style="background-color:#63c0eb;" color_no="" displaygroup="3" class="chips xans-record-"></span>
+                                  </div>
+                              </div>
+                              <p class="name">
+                                  <a href="#">
+                                      <strong class="title displaynone">
+                                          <span style="font-size:12px;">상품명</span> :
+                                      </strong>
+                                      <span style="font-size:12px;">155jean 파스텔 컬러 슬림 일자팬츠 vol.201</span>
+                                  </a>
+                              </p>
+                              <div class="description">
+                                  <ul class="listitem spec">
+                                      <li class="size xans-record-" style="padding: 0px 0px 5px;">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">상품요약정보</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">
+                                              <font>XS,S,M,L,XL</font>
+                                          </span>
+                                      </li>
+                                      <li class="o_cost xans-record-">
+                                          <strong class="title displaynone">
+                                              <span style="font-size:12px;">판매가</span> :
+                                          </strong> 
+                                          <span style="font-size:12px;">26,500원</span>
+                                          <span id="span_product_tax_type_text" style="text-decoration:line-through;"> </span>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="status">
+                                  <div class="icon">
+                                      <img src="img/icon/custom_189.gif" >
+                                      <img src="img/icon/custom_173.gif" >
+                                  </div>
+                              </div>
+                          </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+        <div id="footer">
+            <div class="inner">
+                <div class="f_content">
+                    <div class="instagram">
+                        <h2>
+                            <span>INSTAGRAM</span>
+                        </h2>
+                        <p> ID : momma_0525</p>
+                    </div>
+                    <div class="info">
+                        <h2>
+                            <span>CUSTOMER CENTER</span>
+                        </h2>
+                        <ul>
+                            <li class="phone">
+                                <span>T. 1599-0000</span>
+                            </li>
+                            <li>
+                                <span>
+                                    <font color="cff2400">
+                                    <b>평일 AM 11:00 ~ PM 05:00</b>
+                                    <br>
+                                    </font>
+                                    "점심시간 PM 10:00~ PM 01:00"
+                                    <br>
+                                    "토요일,일요일,공휴일은 쉽니다."
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bankinfo">
+                        <h2>
+                            <span>BANK ACCOUNT</span>
+                        </h2>
+                        <ul>
+                            <li>우리은행 : 00000111000111 </li>
+                            <li>국민은행 : 10010001110000 </li>
+                            <li>농협 : 100020000010000 </li>
+                            <li>제일은행 : 111110000001</li>
+                            <li>신한은행 : 111100001110 </li>
+                            <li>우체국 : 111100111100010 </li>
+                            <li>하나은행 : 1111000011110000</li>
+                            <li>기업은행 : 1111100000001111 </li>                
+                            <li style="padding-top:10px;color:#000;">예 금 주 : (주)큐니걸스 </li>
+                        </ul>
+                    </div>
+                    <div class="shopinfo">
+                        <h2>
+                            <span>SHOP INFO</span>
+                        </h2>  
+                        <ul class="utilMenu">
+                            <li class="home"><a href="#">회사소개 </a></li>
+                            <li><a href="#">이용약관 </a></li>
+                            <li><a href="#"  style="font-weight: 700;"><strong>개인정보처리방침</strong></a></li>
+                            <li><a href="#"> 이용안내  </a></li>
+                            <li><a href="#">배송조회 </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="f_add">
+                    <p>
+                        <span>trade : (주)큐니걸스 </span> 
+                        <span>ceo : 손유경</span>
+                        <span>tel : 1599-0000</span> 
+                        <span>permit number : 0000</span> 
+                        <span>E-mail: jmuk9702@gmail</span>
+                    </p>
+                    <span>
+                     본 디자인에 사용된 이미지는 (주)큐니걸스 사이트에서 포트폴리용으로 임의 사용한 것입니다. 주소 및 번호는 다 임의로 정한 것임을 밝힙니다.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <script src="js/swiper.min.js"></script>
+
+  <script>
+      var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        loopAdditionalSlides: 100,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+      
+        function winScroll(stat) {
+	var way = 0;
+	if(stat != 'top') {
+		way = Math.floor( jQuery(document).height() - jQuery(window).height() );
+	}
+	jQuery('html, body').animate({scrollTop : way}); return false
+}
+      
+      $(function(){
+		
+		var a=0;
+		$("#side_btn").click(function(){
+			a++;
+			a=a%2;
+			if(a==1){
+				$("#quick").css("right","-102px")
+			}else{
+				$("#quick").css("right","0px")
+			}
+		})
+	})
+      
+      $('#close_btn').on({
+          'click' : function(){
+              var src = ($(this).attr('src') === 'img/icon/close.png')
+                ? 'img/icon/menu.png'
+                : 'img/icon/close.png';
+              $(this).attr('src', src);
+          }
+      });
+  </script>
+</body>
+
+</html>    
